@@ -14,7 +14,7 @@ html{
   box-sizing: border-box;
 }
 
-*
+*,
 *::before
 *::after{
   box-sizing: inherit;
@@ -105,6 +105,7 @@ header {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  display: inline-block;
 }
 
 .title {
@@ -252,3 +253,53 @@ footer {
   color: var(--white);
 }
 
+.button-list {
+  display: inline-block;
+}
+
+.menu-item{
+  display: inline-block;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-container {
+  align-items: center;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header .logo {
+margin-right: 93px;
+}
+
+.menu {
+  display: flex;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu-item:not(:last-child) {
+margin-right: 50px;
+}
