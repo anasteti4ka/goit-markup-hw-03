@@ -4,95 +4,99 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Эффективные решения для вашего бизнеса" />
-    <title>Студия</title> 
+    <title>Студия</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
-<div class="container header-container">
     <header class="header">
+        <!--Menu Container-->
+        <div class="container header-container">
         <nav class="navigation">
-            <ul class="list menu">
-                <li>
-                    <a href="#home" class="link logo"><span class="web">Web</span>Studio</a>
-                </li>
+            <a class="link logo" href="#home"><span class="web">Web</span>Studio</a>
+             <ul class="list menu">
                 <li class="menu-item"><a href="./index.html" class="link">Студия</a></li>
                 <li class="menu-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li class="menu-item"><a href="#contacts" class="link">Контакты</a></li>
             </ul>
         </nav>
         <ul class="list menu">
-            <li class="menu-item"><a href="mailto:info@devstudio.com" class="contacts-header">info@devstudio.com</a>
-            </li>
+            <li class="menu-item"><a href="mailto:info@devstudio.com" class="contacts-header">info@devstudio.com</a></li>
             <li class="menu-item"><a href="tel:00380961111111" class="contacts-header">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
-</div>
-<main>
-    <div class="container">
+    <main>
+        <!--Hero Container-->
         <section class="title">
+        <div class="container hero-content">
             <h1 class="title-text">
                 Эффективные решения <br />
                 для вашего бизнеса
             </h1>
+            <div class="hero-button">
             <button class="title-button" type="button" >Заказать услугу</button>
+            </div>
+        </div>
         </section>
-    </div>
-    <div class="container">
-        <section class="about">
-            <ul>
-                <li>
+        <!--Description Container-->
+        <section class="section about">
+        <div class="container">
+            <ul class="flexbox">
+                <li class="content-box">
                     <h3 class="description-title">Внимание к деталям</h3>
                     <p class="description">Идейные соображения, а также начало повседневной работы по формированию
                     позиции.</p>
                 </li>
-                <li>
+                <li class="content-box">
                     <h3 class="description-title">Пунктуальность</h3>
                     <p class="description">Задача организации, в особенности же рамки и место обучения кадров
                     влечет за собой.</p>
                 </li>
-                <li>
+                <li class="content-box">
                     <h3 class="description-title">Планирование</h3>
                     <p class="description">Равным образом консультация с широким активом в значительной степени
                     обуславливает.</p>
                 </li>
-                <li>
+                <li class="content-box">
                     <h3 class="description-title">Современные технологии</h3>
                     <p class="description">Значимость этих проблем настолько очевидна, что реализация плановых
                     заданий.</p>
                 </li>
             </ul>
+        </div>
         </section>
-    </div>
-    <div class="container">
-        <section class="about">
+        <!--About Container-->
+        <section class="section-about">
+        <div class="container">
             <h2 class="about-us">Чем мы занимаемся</h2>
-            <ul>
-                <li>
+            <ul class="flexbox">
+                <li class="content-box-about">
                     <a href="">
                         <img src="./img/wwd1.jpg" width="370" height="294" alt="wwd1" />
                     </a>
                 </li>
-                <li>
+                <li class="content-box-about">
                     <a href="">
                         <img src="./img/wwd2.jpg" width="370" height="294" alt="wwd2" />
                     </a>
                 </li>
-                <li>
+                <li class="content-box-about">
                     <a href="">
                         <img src="./img/wwd3.jpg" width="370" height="294" alt="wwd3" />
                     </a>
                 </li>
             </ul>
+        </div>
         </section>
-    </div>
-    <div class="container">
-        <section class="team">
+        <!--Team Container-->
+        <section class="section team">
+        <div class="container">
             <h2 class="about-us">Наша команда</h2>
-            <ul>
-                <li>
+            <ul class="flexbox">
+                <li class="content-box">
                 <figure class="figure-studio">
                      <img src="./img/demjanenko.jpg" width="270" height="260" alt="product-designer">
                     <figcaption class="team-name">
@@ -101,7 +105,7 @@
                     </figcaption>
                 </figure>
                 </li>
-                <li>
+                <li class="content-box">
                 <figure class="figure-studio">
                     <img src="./img/repina.jpg" width="270" height="260" alt="frontend-developer">
                     <figcaption class="team-name">
@@ -110,7 +114,7 @@
                     </figcaption>
                 </figure>
                 </li>
-                <li>
+                <li class="content-box">
                 <figure class="figure-studio">
                     <img src="./img/tarasov.jpg" width="270" height="260" alt="marketing">
                     <figcaption class="team-name">
@@ -119,7 +123,7 @@
                     </figcaption>
                 </figure>
                 </li>
-                <li>
+                <li class="content-box">
                 <figure class="figure-studio">
                     <img src="./img/ermakov.jpg" width="270" height="260" alt="ui-designer">
                     <figcaption class="team-name">
@@ -129,19 +133,20 @@
                 </figure>
                 </li>
             </ul>
+        </div>
         </section>
-    </div>
     </main>
-    <div class="container">
         <footer>
-            <a href="#home" class="link"><span class="web">Web</span><span class="studio">Studio</span></a>
-            <address class="adress">
-                г. Киев, пр-т Леси Украинки, 26
-            </address>
-            <a href="mailto:info@devstudio.com" class="contacts-footer">info@devstudio.com</a>
-            <a href="tel:00380961111111" class="contacts-footer">+38 096 111 11 11</a>
+            <!--Footer Container-->
+            <div class="container footer-info">
+                <a href="#home" class="link logo-footer"><span class="web">Web</span><span class="studio">Studio</span></a>
+                <address class="adress footer-padding">
+                    г. Киев, пр-т Леси Украинки, 26
+                </address>
+                <a href="mailto:info@devstudio.com" class="contacts-footer footer-padding">info@devstudio.com</a>
+                <a href="tel:00380961111111" class="contacts-footer footer-padding">+38 096 111 11 11</a>
+            </div>
         </footer>
-    </div>
 </body>
 
 </html>

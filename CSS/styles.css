@@ -14,7 +14,7 @@ html{
   box-sizing: border-box;
 }
 
-*,
+*
 *::before
 *::after{
   box-sizing: inherit;
@@ -29,8 +29,62 @@ body {
   color: var(--grey);
 }
 
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 main {
   background: var(--lightgrey);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--white);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background: var(--lightblack);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .link {
@@ -39,17 +93,25 @@ main {
   font-weight: 500;
 }
 
+.header .logo {
+  margin-right: 93px;
+}
+
+.menu {
+  display: inline-flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
 }
 
-ul {
-  list-style-type: none;
-}
-
-header {
-  background: var(--white);
+.hero-content {
+  max-width: 696px;
 }
 
 .contacts-header {
@@ -81,6 +143,11 @@ header {
   color: var(--accent-color);
 }
 
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .web {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
@@ -105,7 +172,6 @@ header {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  display: inline-block;
 }
 
 .title {
@@ -120,20 +186,51 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+
+.hero-button {
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .title-button {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0px;
+  display: inline-block;
+  background-color: var(--accent-color);
   color: var(--white);
+
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-box {
+  width: calc(100% / 4 - 30px);
+}
+
+.content-box-about {
+  width: calc(100% / 3 - 30px); 
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-about {
+  padding-bottom: 94px;
 }
 
 .description-title {
@@ -159,6 +256,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black);
+  padding-bottom: 50px;
 }
 
 .about {
@@ -196,14 +294,15 @@ header {
   color: var(--grey);
 }
 
-footer {
-  background: var(--lightblack);
-}
-
 .button-portf {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
   color: var(--black);
-  background: var(--whitegrey)
+  background: var(--whitegrey);
   border-radius: 4px; 
+  border-color: var(--whitegrey);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -225,6 +324,10 @@ footer {
 }
 
 .project-name {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 322px;
   height: 36px;
   font-weight: bold;
@@ -235,6 +338,7 @@ footer {
 }
 
 .project-description {
+  padding-bottom: 20px;
   width: 322px;
   height: 30px;
   font-weight: 400;
@@ -253,53 +357,33 @@ footer {
   color: var(--white);
 }
 
-.button-list {
-  display: inline-block;
+.logo-footer {
+  padding-bottom: 20px;
 }
 
-.menu-item{
-  display: inline-block;
+.footer-padding:not(:last-child) {
+  padding-bottom: 9px;
 }
 
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.header-container {
-  align-items: center;
-}
-
-.header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.portfolio-button {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
-.navigation {
+.portfolio-figure {
   display: flex;
-  align-items: center;
-  margin-right: auto;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
-.header .logo {
-margin-right: 93px;
+.btn-p:not(:last-child) {
+  margin-right: 8px;
 }
 
-.menu {
-  display: flex;
-}
-
-.list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-.menu-item:not(:last-child) {
-margin-right: 50px;
+.port-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: calc(100% / 3 - 30px); 
 }
