@@ -319,6 +319,7 @@ p {
   height: 404px;
   background: var(--white);
   border: 1px solid var(--borders-color);
+  box-sizing: border-box
 }
 
 .project-name {
@@ -336,7 +337,10 @@ p {
 }
 
 .project-description {
+  padding-top: 4px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 322px;
   height: 30px;
   font-weight: 400;
@@ -383,5 +387,4 @@ p {
 .port-item {
   margin-top: 30px;
   margin-left: 30px;
-  width: calc(100% / 3 - 30px); 
 }
