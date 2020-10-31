@@ -75,6 +75,13 @@ p {
   margin: 0;
 }
 
+.portfoilio-items {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -323,10 +330,7 @@ p {
 }
 
 .project-name {
-  padding-top: 20px;
   padding-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
   width: 322px;
   height: 36px;
   font-weight: bold;
@@ -337,10 +341,6 @@ p {
 }
 
 .project-description {
-  padding-top: 4px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
   width: 322px;
   height: 30px;
   font-weight: 400;
@@ -378,6 +378,10 @@ p {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+}
+
+.portfolio {
+  border: 1px solid #ECECEC;
 }
 
 .btn-p:not(:last-child) {
